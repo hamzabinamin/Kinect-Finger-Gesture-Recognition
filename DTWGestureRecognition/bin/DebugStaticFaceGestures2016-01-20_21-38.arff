@@ -1,0 +1,11 @@
+@relation staticFaceGestures
+
+@attribute BrowLower real 
+@attribute BrowRaiser real 
+@attribute JawLower real 
+@attribute LipCornerDepressor real 
+@attribute LipRaiser real 
+@attribute LipStretcher real 
+@attribute gesture {Neutral, Yawn, Sad, Happy, ReiseEyeBrows} 
+
+@data 

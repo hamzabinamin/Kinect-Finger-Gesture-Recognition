@@ -1,0 +1,169 @@
+﻿<Window x:Class="DTWGestureRecognition.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:DTWGestureRecognition"
+        Title="KinectDTW" Height="759" Width="1298" Loaded="WindowLoaded" Closed="WindowClosed">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="58" />
+            <RowDefinition Height="162" />
+            <RowDefinition Height="480" />
+            <RowDefinition Height="16" />
+            <RowDefinition Height="4*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="81" />
+            <ColumnDefinition Width="119" />
+            <ColumnDefinition Width="440" />
+            <ColumnDefinition Width="636*" />
+        </Grid.ColumnDefinitions>
+        <StackPanel Grid.ColumnSpan="3" Margin="65,0,197,24" Grid.Column="1">
+            <!--  <Image Source="/DTWGestureRecognition;component/HeaderBG.png" Width="713" Height="35" />-->
+        </StackPanel>
+        <StackPanel Grid.ColumnSpan="3" Margin="0,40,407,0" Grid.RowSpan="2">
+            <TextBox FontSize="14" Name="SelectOp" Margin="0,0,0,0" Focusable="False" BorderThickness="0" Text="Select Gesture to record:" TextAlignment="Left" Width="158" Height="20" />
+            <Button Name="dtwRead" Content="Read" Click="DtwReadClick" Width="200" IsEnabled="False" />
+            <Button Name="dtwCapture" Content="Capture" Click="DtwCaptureClick" Width="200 "/>
+            <Button Name="dtwStore" Content="Store" IsEnabled="False" Click="DtwStoreClick" Width="200" />
+            <Button Name="dtwLoadFile" Content="Load gesture file" IsEnabled="True" Click="DtwLoadFile" Width="200" />
+            <Button Name="dtwSaveToFile" Content="Save to file" IsEnabled="True" Click="DtwSaveToFile" Width="200" />
+            <TextBlock Height="23" Background="Silver" Name="SliderValue" Text="Tilt angle: " Width="201" />
+            <Slider Name="TiltSlider" Height="23" Width="100" Minimum="-27" Maximum="27" ValueChanged="TiltSlider_ValueChanged"/>
+        </StackPanel>
+        <StackPanel Grid.Column="2" Grid.Row="1" HorizontalAlignment="Left" Width="401" Margin="39,0,0,0">
+            <ComboBox Name="gestureList" Width="400">
+
+                <ComboBoxItem>@one</ComboBoxItem>
+                <ComboBoxItem>@two</ComboBoxItem>
+                <ComboBoxItem>@three</ComboBoxItem>
+                <ComboBoxItem>@four</ComboBoxItem>
+                <ComboBoxItem>@five</ComboBoxItem>
+                <ComboBoxItem>@Alone</ComboBoxItem>
+                <ComboBoxItem>@RockOn</ComboBoxItem>
+                <ComboBoxItem>@A</ComboBoxItem>
+                <ComboBoxItem>@B</ComboBoxItem>
+                <ComboBoxItem>@C</ComboBoxItem>
+                <ComboBoxItem>@E</ComboBoxItem>
+                <ComboBoxItem>@F</ComboBoxItem>
+                <ComboBoxItem>@G</ComboBoxItem>
+                <ComboBoxItem>@H</ComboBoxItem>
+                <ComboBoxItem>@I</ComboBoxItem>
+                <ComboBoxItem>@J</ComboBoxItem>
+                <ComboBoxItem>@Thumbsup</ComboBoxItem>
+                <ComboBoxItem>@Thumbsdown</ComboBoxItem>
+                <ComboBoxItem>@Yes</ComboBoxItem>
+                <ComboBoxItem>@Best</ComboBoxItem>
+                <ComboBoxItem>@Color</ComboBoxItem>
+
+                <ComboBoxItem>@ToAccept</ComboBoxItem>
+                <ComboBoxItem>@ToAccompany</ComboBoxItem>
+                <ComboBoxItem>@Activity</ComboBoxItem>
+                <ComboBoxItem>@HowMuch</ComboBoxItem>
+                <ComboBoxItem>@HowMany</ComboBoxItem>
+                <ComboBoxItem>@Before</ComboBoxItem>
+                <ComboBoxItem>@ToChange</ComboBoxItem>
+                <ComboBoxItem>@City</ComboBoxItem>
+                <ComboBoxItem>@Coffee</ComboBoxItem>
+                <ComboBoxItem>@Welcome</ComboBoxItem>
+                <ComboBoxItem>@Age</ComboBoxItem>
+                <ComboBoxItem>@People</ComboBoxItem>
+                <ComboBoxItem>@Airplane</ComboBoxItem>
+                <ComboBoxItem>@Tobeleive</ComboBoxItem>
+                <ComboBoxItem>@Leftwave</ComboBoxItem>
+                <ComboBoxItem>@Rightwave</ComboBoxItem>
+                <ComboBoxItem>@Tocome</ComboBoxItem>
+                <!--  <ComboBoxItem>@age</ComboBoxItem>
+                <ComboBoxItem>@hello</ComboBoxItem>
+                <ComboBoxItem>@toread</ComboBoxItem>
+                <ComboBoxItem>@before</ComboBoxItem>
+                <ComboBoxItem>@best</ComboBoxItem>
+                <ComboBoxItem>@coffee</ComboBoxItem>
+                <ComboBoxItem>@color</ComboBoxItem>
+                <ComboBoxItem>@dog</ComboBoxItem>
+               
+                <ComboBoxItem>@goodluck</ComboBoxItem>
+                <ComboBoxItem>@happy</ComboBoxItem>
+                <ComboBoxItem>@sad</ComboBoxItem>
+               
+               
+               
+                <ComboBoxItem>@perfect</ComboBoxItem>
+                <ComboBoxItem>@toaccept</ComboBoxItem>
+                <ComboBoxItem>@poor</ComboBoxItem>
+                <ComboBoxItem>@alone</ComboBoxItem>
+                <ComboBoxItem>@HowMany</ComboBoxItem>
+                <ComboBoxItem>@HowMuch</ComboBoxItem>
+                <ComboBoxItem>@people</ComboBoxItem>
+                <ComboBoxItem>@person</ComboBoxItem>
+                -->
+
+            </ComboBox>
+            <TextBox FontSize="14" Name="results"  Background="Beige" Margin="0,0,0,0" Focusable="False" BorderThickness="0" Text="Body - Gesture:" TextAlignment="Left" HorizontalAlignment="Left" VerticalAlignment="Top" Width="400" Height="20" />
+            <!-- <TextBox FontSize="14" Name="resultsS" Background="Beige" Margin="0,0,0,0" Focusable="False" BorderThickness="0" Text="Body - Static Gesture:" TextAlignment="Left" HorizontalAlignment="Left" VerticalAlignment="Top" Width="400" Height="20" /> -->
+            <!-- <TextBox FontSize="14" Name="faceResults" Background="Beige" Margin="0,0,0,0" Focusable="False" BorderThickness="0" Text="Face - Gesture:" TextAlignment="Left" HorizontalAlignment="Left" VerticalAlignment="Top" Width="400" Height="20" /> -->
+            <!-- <TextBox FontSize="14" Name="faceResultsS" Background="Beige" Margin="0,0,0,0" Focusable="False" BorderThickness="0" Text="Face - Static Gesture:" TextAlignment="Left" HorizontalAlignment="Left" VerticalAlignment="Top" Width="400" Height="20" /> -->
+            <TextBox FontSize="14" Name="status"  Background="Silver" Margin="0,0,0,0" Focusable="False" BorderThickness="0" Text="Status:" TextAlignment="Left" HorizontalAlignment="Left" VerticalAlignment="Top" Width="405" Height="20" />
+            <TextBox FontSize="14" Name="currentBufferFrame" Background="Silver" Margin="0,0,0,0" Focusable="False" BorderThickness="0" Text="Current Buffer Frame: " TextAlignment="Left" HorizontalAlignment="Left" VerticalAlignment="Top" Width="404" Height="20" />
+            <TextBox FontSize="14" Name="kinectStatus" Background="Silver" Margin="0,0,0,0" Focusable="False" BorderThickness="0" Text="Kinect: " TextAlignment="Left" Width="402" Height="20" />
+            <Button Content="Recognise Body Gesture" Name="test" Click="test_Click"/>
+            <Button Content="Recognise Finger Gesture" Name="test2" Click="test_Click2"/>
+
+            <!--<RadioButton x:Name="recognizeRadio" Content="Recognize" HorizontalAlignment="Right" Width="401" />-->
+        </StackPanel>
+        <Viewbox Stretch="Uniform" Grid.Row="2" Grid.ColumnSpan="3" >
+            <Grid>
+                <Image Width="640" Height="480" Name="videoImage"    />
+                <Canvas  Name="skeletonCanvas" Background="Transparent"></Canvas>
+            </Grid>
+        </Viewbox>
+
+        <Label Grid.Row="3" Grid.ColumnSpan="4" Content="Sign Language translator" Foreground="White" VerticalContentAlignment="Top" HorizontalContentAlignment="Center" Height="16" FontSize="10" Padding="0">
+            <Label.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF4D35AB" Offset="1" />
+                    <GradientStop Color="#FF724798" Offset="0.498" />
+                    <GradientStop Color="#FF2B9E32" Offset="0" />
+                </LinearGradientBrush>
+            </Label.Background>
+        </Label>
+        <Viewbox Margin="0,0,-4,0" Stretch="Uniform" Grid.Column="3" Grid.Row="2">
+            <Grid>
+                <Image Height="480" Name="FaceImage" Width="640" />
+                <Canvas Background="Transparent" Name="canvas1" Margin="20,18,12,6" />
+                <local:FaceTrackingViewer x:Name="faceTrackingViewer" />
+            </Grid>
+        </Viewbox>
+        <!-- <CheckBox Content="Enable Face" Grid.Column="3" Grid.Row="1" Height="16" HorizontalAlignment="Left" Margin="285,63,0,0" Name="faceTracking" VerticalAlignment="Top" Width="165"  /> -->
+        <!-- <CheckBox Content="Enable Natural User Interface" Height="16" Name="enableNui" Grid.Column="3" Margin="285,81,174,65" Grid.Row="1" /> -->
+        <!-- <CheckBox Content="Seated" Grid.Column="3" Grid.Row="1" Height="16" HorizontalAlignment="Left" Margin="285,97,0,0" Name="seated" VerticalAlignment="Top" Width="165" Checked="seated_Checked" /> -->
+        <!-- <CheckBox Content="Near tracking" Grid.Column="3" Grid.Row="1" Height="16" HorizontalAlignment="Left" Margin="285,114,0,0" Name="nearTracking" VerticalAlignment="Top" Checked="nearTracking_Checked" /> -->
+        <!-- <TextBox Grid.Column="3" Grid.Row="1" Height="20" HorizontalAlignment="Left" Margin="8,139,0,0" Name="faceOrientation" VerticalAlignment="Top" Width="366" TextChanged="faceOrientation_TextChanged" /> -->
+        <!-- <CheckBox Content="Disable Face Mesh" Grid.Column="3" Grid.Row="1" HorizontalAlignment="Left" Margin="285,44,0,102" Name="faceMesh" Width="123" Checked="faceMesh_checked" /> -->
+        <RadioButton Content="Body - Dynamic Gestures" Grid.Column="3" Grid.Row="1" Height="16" HorizontalAlignment="Left" Margin="468,28,0,0" Name="captureBody" VerticalAlignment="Top" />
+        <!--   <RadioButton Content="Body - Static Gestures" Grid.Column="3" Grid.Row="1" Height="16" HorizontalAlignment="Left" Margin="468,31,0,0" Name="captureBodyS" VerticalAlignment="Top" /> -->
+        <!--   <RadioButton Content="Face - Dynamic Gestures" Grid.Column="3" Grid.Row="1" Height="16" HorizontalAlignment="Left" Margin="471,97,0,0" Name="captureFace" VerticalAlignment="Top" /> -->
+        <!-- <RadioButton Content="Face - Static Gestures"  Grid.Column="3" Grid.Row="1" Height="16" HorizontalAlignment="Left" Margin="468,71,0,0" Name="captureFaceS" VerticalAlignment="Top" /> -->
+        <Label Height="30" Content="Gesture Recognition" FontSize="14" FontWeight="Bold" Width="600" FontStretch="SemiExpanded" FontStyle="Normal" HorizontalContentAlignment="Center" VerticalContentAlignment="Top" FontFamily="Segoe UI" Grid.Column="2" Grid.ColumnSpan="2" Margin="119,28,357,0"></Label>
+       <!-- <Label Content="Recognized Speech:" Grid.Column="3" Grid.Row="1" Height="28" HorizontalAlignment="Left" Margin="8,3,0,0" Name="label1" VerticalAlignment="Top" Width="122" /> -->
+       <!-- <TextBox Grid.Column="3" Grid.Row="1" Background="Beige" Height="23" HorizontalAlignment="Left" Margin="123,4,0,0" Name="RecognizedSpeech" VerticalAlignment="Top" Width="156"  Focusable="False" BorderThickness="0" Text="You said: ... " /> -->
+        <!-- <RadioButton Content="Face - Dynamic Orientation" Grid.Column="3" Grid.Row="1" Height="16" HorizontalAlignment="Left" Margin="468,91,0,0" Name="captureFaceO" VerticalAlignment="Top" Width="170" /> -->
+        <!-- <RadioButton Content="Hand - Static Gestures" Grid.Column="3" Grid.Row="1" Height="16" HorizontalAlignment="Left" Margin="468,131,0,0" Name="captureHandS" VerticalAlignment="Top" Width="158" /> -->
+        <RadioButton Content="Hand - Dynamic Gestures" Grid.Column="3" Grid.Row="1" Height="16" HorizontalAlignment="Left" Margin="468,85,0,0" Name="captureHand" VerticalAlignment="Top" Width="158" />
+        <TextBox Grid.Column="3" Background="Beige" Grid.Row="1" Height="23"  Focusable="False" BorderThickness="0" HorizontalAlignment="Left" Margin="10,78,0,0" Name="handGestureText" Text="Hand - Gesture: " VerticalAlignment="Top" Width="269" />
+        <TextBox Grid.Column="3" Background="Beige" Focusable="False"  BorderThickness="0" Grid.Row="1" Height="23" HorizontalAlignment="Left" Margin="10,30,0,0" Text ="Hands : " Name="handStaticGesture" VerticalAlignment="Top" Width="269" />
+        <!--<TextBox Grid.Column="3"  Background="Beige" Focusable="False" BorderThickness="0" Grid.Row="1" Height="23" HorizontalAlignment="Left" Margin="10,87,0,0" Name="faceDynamicOrientation" Text ="Face - Dynamic Orientation:" VerticalAlignment="Top" Width="269" /> -->
+        <!--<TextBox Grid.Column="3"  Background="Beige" Focusable="False" BorderThickness="0" Grid.Row="1" Height="23" HorizontalAlignment="Left" Margin="10,112,0,0" Name="faceOrientationText" Text ="Face - Orientation:" VerticalAlignment="Top" Width="269" /> -->
+        <!--<Label Content="Enable/Disable Options" Grid.Column="3" Height="23" HorizontalAlignment="Left" Margin="298,40,0,0" Name="label2" VerticalAlignment="Top" Width="141" Grid.RowSpan="2" /> -->
+        <Label Content="Record/Load Gestures" Grid.Column="3" Height="28" HorizontalAlignment="Left" Margin="468,37,0,0" Name="label3" VerticalAlignment="Top" Width="131" Grid.RowSpan="2" />
+        <!--<TextBox Background="Beige" x:Name="Candidate1" Grid.Column="3" HorizontalAlignment="Left" Height="23" Margin="10,97,0,0" Grid.Row="1" TextWrapping="Wrap" Text=" " VerticalAlignment="Top" Width="120"/> -->
+        <!--<TextBox Background="Beige" x:Name="Candidate2" Grid.Column="3" HorizontalAlignment="Left" Height="23" Margin="10,129,0,0" Grid.Row="1" TextWrapping="Wrap" Text=" " VerticalAlignment="Top" Width="120"/> -->
+        <!--  <TextBox x:Name="candidate3" Grid.Column="3" HorizontalAlignment="Left" Height="23" Margin="305,69,0,0" Grid.Row="1" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="candidate4" Grid.Column="3" HorizontalAlignment="Left" Height="23" Margin="305,97,0,0" Grid.Row="1" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="dtwTextOutput" Grid.Column="3" HorizontalAlignment="Left" Height="23" Margin="305,125,0,0" Grid.Row="1" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+-->
+       <!-- <Button x:Name="normalize" Content="Normalize" Grid.Column="3" HorizontalAlignment="Left" Margin="211,129,0,0" Grid.Row="1" VerticalAlignment="Top" Width="75" Height="23" Click="normalize_Click"/> -->
+        <!-- <TextBox Background="Beige" x:Name="Candidate3" Grid.Column="3" HorizontalAlignment="Left" Height="23" Margin="159,129,0,0" Grid.Row="1" TextWrapping="Wrap" Text=" " VerticalAlignment="Top" Width="120"/> -->
+        <!-- <CheckBox Content="Enable Hands Tracking " Grid.Column="3" Grid.Row="1" Height="16" HorizontalAlignment="Left" Margin="285,25,0,0" Name="enableHandTracking" VerticalAlignment="Top" Checked="checkBox1_Checked_2" /> -->
+        <!--<CheckBox Content="Enable Hand Contour" Grid.Column="3" Grid.Row="1" HorizontalAlignment="Left" Margin="285,6,0,140" Name="handContour" Width="144" /> -->
+    </Grid>
+</Window>

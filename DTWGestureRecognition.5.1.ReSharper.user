@@ -1,0 +1,236 @@
+<Configuration>
+  <SettingsComponent>
+    <string />
+    <integer />
+    <boolean>
+      <setting name="livetemplates.csharp.usevar">True</setting>
+      <setting name="SolutionAnalysisEnabled">False</setting>
+    </boolean>
+  </SettingsComponent>
+  <RecentFiles>
+    <RecentFiles>
+      <File id="614D0F9D-60FC-408A-B161-B4C0A6C00276/f:App.xaml" caret="43" fromTop="0" />
+      <File id="614D0F9D-60FC-408A-B161-B4C0A6C00276/f:Skeleton2DDataExtract.cs" caret="4176" fromTop="25" />
+      <File id="614D0F9D-60FC-408A-B161-B4C0A6C00276/f:App.xaml.cs" caret="916" fromTop="21" />
+      <File id="614D0F9D-60FC-408A-B161-B4C0A6C00276/f:Skeleton2DdataCoordEventArgs.cs" caret="2160" fromTop="16" />
+      <File id="614D0F9D-60FC-408A-B161-B4C0A6C00276/f:README.txt" caret="8424" fromTop="202" />
+      <File id="614D0F9D-60FC-408A-B161-B4C0A6C00276/f:DtwGestureRecognizer.cs" caret="8902" fromTop="54" />
+      <File id="614D0F9D-60FC-408A-B161-B4C0A6C00276/f:MainWindow.xaml.cs" caret="21661" fromTop="30" />
+      <File id="614D0F9D-60FC-408A-B161-B4C0A6C00276/f:MainWindow.xaml" caret="5636" fromTop="8" />
+    </RecentFiles>
+    <RecentEdits>
+      <File id="614D0F9D-60FC-408A-B161-B4C0A6C00276/f:README.txt" caret="5292" fromTop="7" />
+      <File id="614D0F9D-60FC-408A-B161-B4C0A6C00276/f:README.txt" caret="5988" fromTop="25" />
+      <File id="614D0F9D-60FC-408A-B161-B4C0A6C00276/f:README.txt" caret="6371" fromTop="21" />
+      <File id="614D0F9D-60FC-408A-B161-B4C0A6C00276/f:README.txt" caret="6845" fromTop="34" />
+      <File id="614D0F9D-60FC-408A-B161-B4C0A6C00276/f:README.txt" caret="8424" fromTop="27" />
+      <File id="614D0F9D-60FC-408A-B161-B4C0A6C00276/f:MainWindow.xaml" caret="742" fromTop="2" />
+      <File id="614D0F9D-60FC-408A-B161-B4C0A6C00276/f:MainWindow.xaml" caret="742" fromTop="8" />
+      <File id="614D0F9D-60FC-408A-B161-B4C0A6C00276/f:MainWindow.xaml" caret="742" fromTop="7" />
+      <File id="614D0F9D-60FC-408A-B161-B4C0A6C00276/f:MainWindow.xaml" caret="1309" fromTop="4" />
+      <File id="614D0F9D-60FC-408A-B161-B4C0A6C00276/f:MainWindow.xaml" caret="1991" fromTop="5" />
+      <File id="614D0F9D-60FC-408A-B161-B4C0A6C00276/f:MainWindow.xaml" caret="1991" fromTop="7" />
+      <File id="614D0F9D-60FC-408A-B161-B4C0A6C00276/f:MainWindow.xaml" caret="4059" fromTop="5" />
+      <File id="614D0F9D-60FC-408A-B161-B4C0A6C00276/f:MainWindow.xaml" caret="225" fromTop="3" />
+      <File id="614D0F9D-60FC-408A-B161-B4C0A6C00276/f:MainWindow.xaml" caret="2061" fromTop="6" />
+      <File id="614D0F9D-60FC-408A-B161-B4C0A6C00276/f:MainWindow.xaml" caret="4154" fromTop="8" />
+      <File id="614D0F9D-60FC-408A-B161-B4C0A6C00276/f:MainWindow.xaml" caret="1985" fromTop="11" />
+      <File id="614D0F9D-60FC-408A-B161-B4C0A6C00276/f:MainWindow.xaml" caret="1003" fromTop="9" />
+      <File id="614D0F9D-60FC-408A-B161-B4C0A6C00276/f:MainWindow.xaml" caret="6353" fromTop="12" />
+      <File id="614D0F9D-60FC-408A-B161-B4C0A6C00276/f:MainWindow.xaml" caret="543" fromTop="3" />
+      <File id="614D0F9D-60FC-408A-B161-B4C0A6C00276/f:MainWindow.xaml.cs" caret="28150" fromTop="18" />
+      <File id="614D0F9D-60FC-408A-B161-B4C0A6C00276/f:MainWindow.xaml.cs" caret="27361" fromTop="7" />
+      <File id="614D0F9D-60FC-408A-B161-B4C0A6C00276/f:MainWindow.xaml.cs" caret="25327" fromTop="25" />
+      <File id="614D0F9D-60FC-408A-B161-B4C0A6C00276/f:MainWindow.xaml" caret="228" fromTop="3" />
+      <File id="614D0F9D-60FC-408A-B161-B4C0A6C00276/f:MainWindow.xaml" caret="3306" fromTop="6" />
+      <File id="614D0F9D-60FC-408A-B161-B4C0A6C00276/f:MainWindow.xaml" caret="5706" fromTop="5" />
+      <File id="614D0F9D-60FC-408A-B161-B4C0A6C00276/f:MainWindow.xaml.cs" caret="21394" fromTop="24" />
+      <File id="614D0F9D-60FC-408A-B161-B4C0A6C00276/f:MainWindow.xaml.cs" caret="21661" fromTop="30" />
+      <File id="614D0F9D-60FC-408A-B161-B4C0A6C00276/f:MainWindow.xaml" caret="5684" fromTop="10" />
+      <File id="614D0F9D-60FC-408A-B161-B4C0A6C00276/f:MainWindow.xaml" caret="4576" fromTop="5" />
+      <File id="614D0F9D-60FC-408A-B161-B4C0A6C00276/f:MainWindow.xaml" caret="5636" fromTop="8" />
+    </RecentEdits>
+  </RecentFiles>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <UnitTestRunner>
+    <Providers />
+  </UnitTestRunner>
+  <UnitTestRunnerNUnit>
+    <NUnitInstallDir IsNull="False">
+    </NUnitInstallDir>
+    <UseAddins>Never</UseAddins>
+  </UnitTestRunnerNUnit>
+  <CompletionStatisticsManager>
+    <ItemStatistics item="Default">
+      <Item value="new" priority="11" />
+      <Item value="DtwGestureRecognizer" priority="0" />
+      <Item value="int" priority="7" />
+      <Item value="dtw" priority="3" />
+      <Item value="Debug`0" priority="1" />
+      <Item value="Skeleton2DdataCoordEventArgs`0" priority="2" />
+      <Item value="nui_Skeleton2DdataCoordReady`0" priority="2" />
+      <Item value="EventHandler&lt;SkeletonFrameReadyEventArgs&gt;" priority="0" />
+      <Item value="DtwGestureRecognizer`0" priority="1" />
+      <Item value="Skeleton2DDataExtract" priority="0" />
+      <Item value="skeletonExtract" priority="5" />
+      <Item value="e" priority="0" />
+      <Item value="skeletonFrame" priority="1" />
+      <Item value="sender" priority="0" />
+      <Item value="data" priority="0" />
+      <Item value="video" priority="0" />
+      <Item value="videoTextOutput" priority="0" />
+      <Item value="if" priority="11" />
+      <Item value="a" priority="0" />
+      <Item value="gestureList" priority="0" />
+      <Item value="bool" priority="0" />
+      <Item value="false" priority="0" />
+      <Item value="_capturing" priority="1" />
+      <Item value="_ignore" priority="0" />
+      <Item value="_captureCountdown" priority="1" />
+      <Item value="DateTime`0" priority="3" />
+      <Item value="CaptureCountdownSeconds" priority="0" />
+      <Item value="String`0" priority="0" />
+      <Item value="DtwCaptureClick`0" priority="0" />
+      <Item value="null" priority="2" />
+      <Item value="else" priority="4" />
+      <Item value="private" priority="1" />
+      <Item value="void" priority="2" />
+      <Item value="Timer" priority="0" />
+      <Item value="TimerCallback`0" priority="0" />
+      <Item value="TimerCallback" priority="0" />
+      <Item value="StartCapture`0" priority="0" />
+      <Item value="object" priority="2" />
+      <Item value="status" priority="1" />
+      <Item value="retStr" priority="5" />
+      <Item value="_sequences" priority="4" />
+      <Item value="i" priority="7" />
+      <Item value="as" priority="4" />
+      <Item value="ArrayList`0" priority="5" />
+      <Item value="double" priority="23" />
+      <Item value="dub" priority="2" />
+      <Item value="for" priority="2" />
+      <Item value="ArgumentOutOfRangeException`0" priority="0" />
+      <Item value="foreach" priority="2" />
+      <Item value="in" priority="0" />
+      <Item value="d" priority="0" />
+      <Item value="_labels" priority="3" />
+      <Item value="public" priority="1" />
+      <Item value="string" priority="3" />
+      <Item value="theSequence" priority="1" />
+      <Item value="this" priority="0" />
+      <Item value="_dtw" priority="0" />
+      <Item value="theLabel" priority="0" />
+      <Item value="seqItems" priority="3" />
+      <Item value="localVideo" priority="0" />
+      <Item value="localLabel" priority="0" />
+      <Item value="ArrayList" priority="1" />
+      <Item value="SearchDirectionHint`0" priority="0" />
+      <Item value="gestureName" priority="0" />
+      <Item value="line" priority="2" />
+      <Item value="continue" priority="2" />
+      <Item value="itemCount" priority="5" />
+      <Item value="fileLocation" priority="1" />
+      <Item value="GestureSaveFileLocation" priority="2" />
+      <Item value="GestureSaveFileNamePrefix" priority="1" />
+      <Item value="dlg" priority="0" />
+      <Item value="existingIndex" priority="2" />
+      <Item value="frameNum" priority="0" />
+      <Item value="frames" priority="0" />
+      <Item value="frameCount" priority="1" />
+      <Item value="Double`0" priority="0" />
+      <Item value="Array`0" priority="2" />
+      <Item value="typeof" priority="0" />
+      <Item value="sequences" priority="1" />
+      <Item value="minLen" priority="0" />
+      <Item value="items" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:DWTGestureRecognition.DtwGestureRecognizer">
+      <Item value="recognize`0" priority="5" />
+      <Item value="dtw`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Diagnostics.Debug">
+      <Item value="WriteLine`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Microsoft.Research.Kinect.Nui.Runtime">
+      <Item value="SkeletonFrameReady" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:DTWGestureRecognition.Skeleton2DDataExtract">
+      <Item value="ToString`0" priority="0" />
+      <Item value="ProcessData`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@DTWGestureRecognition.Skeleton2DDataExtract">
+      <Item value="Skeleton2DdataCoordEventHandler`0" priority="3" />
+      <Item value="Skeleton2DdataCoordReady" priority="0" />
+      <Item value="ProcessData`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:DTWGestureRecognition.DtwGestureRecognizer">
+      <Item value="Add`0" priority="3" />
+      <Item value="recognize`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Microsoft.Research.Kinect.Nui.SkeletonFrameReadyEventArgs">
+      <Item value="SkeletonFrame" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.ArrayList">
+      <Item value="Count" priority="5" />
+      <Item value="Add`0" priority="4" />
+      <Item value="RemoveAt`0" priority="0" />
+      <Item value="ToArray`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Int32">
+      <Item value="ToString`0" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:DTWGestureRecognition.Skeleton2DdataCoordEventArgs">
+      <Item value="getCoords`0" priority="2" />
+      <Item value="getPoint`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Double">
+      <Item value="NaN" priority="0" />
+      <Item value="Parse`0" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Point">
+      <Item value="X" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Controls.ComboBox">
+      <Item value="SelectionBoxItem" priority="0" />
+      <Item value="SelectedItem" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Object">
+      <Item value="ToString`0" priority="6" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Controls.TextBox">
+      <Item value="Text" priority="4" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.DateTime">
+      <Item value="Now" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.DateTime">
+      <Item value="AddSeconds`0" priority="0" />
+      <Item value="ToString`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.TimeSpan">
+      <Item value="ToString`0" priority="0" />
+      <Item value="Seconds" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.String">
+      <Item value="Format`0" priority="0" />
+      <Item value="Empty" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Threading.Timer">
+      <Item value="Dispose`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.Timer">
+      <Item value="Stop`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Double">
+      <Item value="ToString`0" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.String">
+      <Item value="StartsWith`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Microsoft.Win32.OpenFileDialog">
+      <Item value="InitialDirectory" priority="0" />
+    </ItemStatistics>
+  </CompletionStatisticsManager>
+</Configuration>
